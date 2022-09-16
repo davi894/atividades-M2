@@ -1,0 +1,139 @@
+:root {
+  --bg-sectionUser: rgb(191 191 191);
+  --color--h2: rgb(85, 81, 81);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 10vh;
+}
+
+.usuarioMinWidth {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+section {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-left: 0.4rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+
+  color: var(--color--h2);
+}
+
+#todos {
+  color: black;
+}
+
+.opcoesMenu {
+  position: fixed;
+  width: 2rem;
+  right: 0;
+  top: 14px;
+}
+
+#sairMenuUsuario {
+  position: fixed;
+  right: 0rem;
+  top: 14px;
+  width: 2rem;
+
+  font-family: "Recursive", sans-serif;
+}
+
+.opcoesMenu:hover,
+#sairMenuUsuario:hover {
+  cursor: pointer;
+}
+
+#usuario {
+  background-color: var(--bg-sectionUser);
+  animation: MenuUsuariooptions 2s ease;
+  margin-top: 4rem;
+}
+
+#FotoDePerfilPrincipal_img {
+  max-width: 3rem;
+  border-radius: 3em;
+}
+
+.menuSemBtn,
+.usuarioMinWidth,
+.inputDesktop {
+  display: none;
+}
+.btnBuscarPorHeader {
+  display: flex;
+  display: none;
+}
+
+.usuario_NomeFoto {
+  align-items: center;
+  margin-top: 0.5rem;
+  max-width: 14rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@keyframes MenuUsuariooptions {
+  0% {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 825px) {
+  .opcoesMenu,
+  #sairMenuUsuario {
+    display: none;
+  }
+
+  .menuSemBtn,
+  .usuarioMinWidth,
+  .inputDesktop {
+    display: block;
+  }
+
+  .menuSemBtn {
+    display: flex;
+  }
+
+  .usuarioMinWidth {
+    margin-top: 0.5rem;
+    display: flex;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  .btnBuscarPorHeader {
+    display: block;
+  }
+}

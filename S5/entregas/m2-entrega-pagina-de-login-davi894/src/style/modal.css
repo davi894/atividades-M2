@@ -1,0 +1,45 @@
+:root {
+  --bg-modal: #4a6655;
+  --color-modal: #afb3b6;
+  --bg-sairModal: #ff0000;
+  --color-sairModal: #fefae0;
+}
+
+#sairModalCadastro {
+  background-color: var(--bg-sairModal);
+  color: var(--color-sairModal);
+  padding: 0.5rem;
+  border-radius: 25%;
+}
+
+#sairModalCadastro:hover {
+  cursor: pointer;
+}
+
+#sairModalCadastro {
+  position: relative;
+  left: 15rem;
+  bottom: 0rem;
+}
+
+.modalCadastrar {
+  background-color: var(--bg-modal);
+  color: var(--color-modal);
+
+  padding: 1rem;
+
+  border-radius: 1rem;
+
+  position: fixed;
+
+  animation: mostrandoModal 2s ease;
+}
+
+@keyframes mostrandoModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

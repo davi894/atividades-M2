@@ -1,0 +1,63 @@
+:root {
+  --bg-aside: #606c38;
+}
+
+aside {
+  max-width: 98%;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-color: var(--bg-aside);
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 566px) {
+}
+
+@media (min-width: 684px) {
+  main {
+    display: flex;
+    gap: 1.4rem;
+  }
+}
+
+@media (min-width: 570px) {
+  form {
+    align-items: center;
+  }
+}
+
+@media (min-width: 700px) {
+  aside {
+    height: 30rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  form {
+    width: 32rem;
+    align-items: center;
+  }
+
+  input {
+    width: 30rem;
+  }
+}

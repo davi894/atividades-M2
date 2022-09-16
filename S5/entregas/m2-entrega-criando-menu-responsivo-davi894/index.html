@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Asset&family=Merriweather:ital,wght@1,300&family=Recursive:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/global.css">
+    <link rel="stylesheet" href="./src/style/pesquisa.css" .css>
+    <link rel="stylesheet" href="./src/style/menuNavegacao.css" .css>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tech Blog</h1>
+
+        <ul class="menuSemBtn">
+            <li>ALL</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+        <div class="pesquisarPor">
+            <input type="text" class="inputDesktop" placeholder="Pesquisar por...">
+            <button class="btnBuscarPorHeader">Pesquisar</button>
+        </div>
+
+        <div class="usuarioMinWidth">
+            <img src="./src/assents/img/marmota.png" alt="" id="FotoDePerfilPrincipal_img">
+            <h3>Nome Usuário</h3>
+        </div>
+    </header>
+
+    <section id="usuario" style="display: none;">
+        <h2 id="todos">ALL</h2>
+        <h2>CSS</h2>
+        <h2>JavaScript</h2>
+        <h2>Python</h2>
+        <h2>Java</h2>
+        <div>
+            <input type="text" placeholder="Pesquisar por...">
+            <button class="">Pesquisar</button>
+        </div>
+        <div class="usuario_NomeFoto">
+            <img src="./src/assents/img/marmota.png" alt="" id="FotoDePerfilPrincipal_img">
+            <h3>Nome Usuário</h3>
+        </div>
+    </section>
+    <img class="opcoesMenu" src="./src/assents/svg/reorder-three-outline.svg" alt="">
+    <img id="sairMenuUsuario" style="display: none" src="./src/assents/img/icons8-x-64 (1).png" alt="">
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
