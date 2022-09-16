@@ -1,0 +1,154 @@
+:root {
+  --white--cor: #ffff;
+  --black--cor: #000000;
+}
+
+body {
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  border: 1px solid var(--black--cor);
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+#listandoSetores {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.setores {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#admin__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+#admin__section {
+  border: 2px solid var(--black--cor);
+  margin-top: 8rem;
+}
+
+.admin__h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#head__admin {
+  height: 2rem;
+  display: flex;
+  max-width: 90vw;
+  padding: 0.8rem;
+  justify-content: space-between;
+}
+
+#head__admin__h1 {
+  top: 1rem;
+  font-size: 2rem;
+  left: 1rem;
+  font-weight: 900;
+}
+
+.admin__a {
+  color: var(--white--cor);
+}
+
+#admin__ul {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  max-width: 80%;
+  margin-top: 7rem;
+}
+
+.admin__li {
+  background-color: var(--black--cor);
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 200px;
+}
+
+#admin__li:hover {
+  background-color: var(--white--cor);
+  border: 1px solid var(--black--cor);
+  color: var(--black--cor);
+  transition: 1s;
+}
+
+#admin__img {
+  width: 40px;
+}
+
+#admin__dados {
+  flex-direction: column;
+  display: flex;
+}
+
+#admin__NomeImgEmail {
+  display: flex;
+  gap: 4px;
+}
+
+#admin__semDepartamentos,
+#admin__listarUsuarios,
+#lista__ul__empresas,
+#admin__ul__setores,
+#admin__ul__ListarTodosOsDepartamentosDaEmpresa,
+#admin__ul__todosOsDepartamentos {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#admin_section__setores {
+  margin-top: 1rem;
+}
+
+.admin__form__h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#lista__ul__empresas {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.admin__empresas {
+  padding: 1rem;
+  border: 1px solid var(--black--cor);
+}
+
+#admin__ul__setores {
+  margin-top: 1rem;
+}
+
+.funcionario__section {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 532px) {
+  #admin__NomeImgEmail {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/funcionarios/funcionarios.css">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/admin/admin.css">
+    <link rel="stylesheet" href="/src/styles/mode.css">
+    <title>Funcionários</title>
+</head>
+
+<body>
+    <header id="head__admin">
+        <h1 id="head__admin__h1">Multi-Empresas</h1>
+        <div id="admin__NomeImgEmail">
+            <img id="admin__img" src="/src/assets/svg/person-circle-outline.svg" alt="">
+            <div id="admin__dados">
+                <span id="admin__nome"> nome </span>
+                <span id="admin__email"> nome@gmail.com </span>
+            </div>
+            <button id="funcionario__btn__EditarDados">Editar dados</button>
+        </div>
+        <button class="mode">mode</button>
+    </header>
+
+    <main>
+
+        <section id="admin_section">
+            <ul id="admin__listaFuncionarios">
+
+            </ul>
+
+            <ul id="admin__listarDepartamentosEmpresa">
+
+            </ul>
+
+            <ul id="admin__todosOsDepartamentosEmpresa">
+
+            </ul>
+
+        </section>
+    </main>
+
+    <script type="module" src="/src/scripts/models/mode.js"></script>
+    <script type="module" src="/src/scripts/models/fucionarios.js"></script>
+    
+</body>
+
+</html>

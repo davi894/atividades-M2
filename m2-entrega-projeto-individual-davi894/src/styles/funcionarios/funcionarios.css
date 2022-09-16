@@ -1,0 +1,47 @@
+:root {
+  --white--cor: #ffff;
+  --black--cor: #000000;
+}
+
+#funcionario__btn__EditarDados {
+  background-color: var(--black--cor);
+  color: var(--white--cor);
+  border: none;
+  cursor: pointer;
+}
+
+.funcionario__section {
+  top: 61%;
+  left: 1%;
+  width: 10rem;
+  position: absolute;
+}
+
+.funcionario__sairModal {
+  position: absolute;
+  left: 102%;
+  top: 1%;
+  cursor: pointer;
+}
+
+.mode,
+#funcionario__btn__EditarDados {
+  max-width: 5rem;
+  margin-top: 1rem;
+  max-height: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 537px) {
+  #admin__NomeImgEmail {
+    flex-direction: column;
+  }
+  #head__admin {
+    flex-direction: column;
+  }
+
+  #funcionario__btn__EditarDados {
+    padding: 0.5rem;
+  }
+}

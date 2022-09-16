@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/admin/admin.css">
+    <link rel="stylesheet" href="/src/styles/mode.css">
+    <title>Departamentos</title>
+</head>
+
+<body>
+
+    <header id="head__admin">
+        <h1 id="head__admin__h1">Multi-Empresas</h1>
+        <div id="admin__NomeImgEmail">
+            <img id="admin__img" src="/src/assets/svg/person-circle-outline.svg" alt="">
+            <div id="admin__dados">
+                <span id="admin__nome">nome</span>
+                <span id="admin__email">nome@gmail.com</span>
+            </div>
+        </div>
+        <button class="mode">mode</button>
+    </header>
+
+    <main>
+        <ul id="admin__ul">
+            <li class="admin__li"> <a class="admin__a" href="/src/pages/admin/pages/empresas.html">empresas</a>
+            </li>
+            <li class="admin__li"> <a class="admin__a" href="/src/pages/admin/pages/setores.html">setores</a></li>
+            <li class="admin__li"> <a class="admin__a" href="/src/pages/admin/pages/departamento.html">departamentos</a>
+            </li>
+            <li class="admin__li"><a class="admin__a" href="/src/pages/admin/admin.html">Página Principal</a></li>
+        </ul>
+
+        <section id="admin_section__empresas">
+
+            <article id="admin_section__listarTodososDepartamentos">
+                <h2 class="admin__form__h2">Listar todos os departamentos</h2>
+                <ul id="admin__ul__todosOsDepartamentos">
+
+                </ul>
+            </article>
+
+            <article id="admin_section__listarTodososDepartamentosdeUmaEmpresa">
+                <h2 class="admin__form__h2">Listar os Todos os departamentos da empresa</h2>
+                <select name="" id="admin__ListadoDepartamentosDeUmaEmpresa">
+                </select>
+                <button id="admin__btn__selcet">Departamentos de empresas</button>
+                <ul id="admin__ul__ListarTodosOsDepartamentosDaEmpresa"></ul>
+            </article>
+
+            <article id="admin_section__criarEmpresa">
+                <h2 class="admin__form__h2">Cadastrar Empresa</h2>
+                <form action="" id="admin__form">
+                    <label for="">Nome </label>
+                    <input type="text" id="admin_empresa">
+                    <label for="">Descrição</label>
+                    <input type="text" id="admin_empresa__description">
+                    <label for="">Abertura</label>
+                    <input type="text" id="admin_open__wokrr_uuid">
+                    <label for="">uuid setor</label>
+                    <select name="" id="admin__catdastrarEmpresas"></select>
+                    <button id="buscar__uuid__setor">buscar uuid setor</button>
+                    <input type="text" id="admin_name__setor_uuid">
+                    <button id="admin__CriarEmpresa">criar</button>
+                </form>
+            </article>
+
+
+            <article id="admin_section__criarDepartamento">
+                <h2 class="admin__form__h2">Criar Departamento</h2>
+                <form action="" id="admin__form">
+                    <label for="">Nome da Empresa</label>
+                    <input type="text" id="admin_name__empresa">
+                    <label for="">Descrição</label>
+                    <input type="text" id="admin_name__description">
+                    <label for="">uuid da Empresa</label>
+                    <select name="" id="admin__uuid__Empresa"></select>
+                    <button id="uuid__empresa__criarDep">buscar uuid Empresa</button>
+                    <input type="text" id="admin_name__company_uuid">
+                    <button id="admin__CriarDepartamento">criar</button>
+                </form>
+            </article>
+
+            <article id="admin_section__contratar">
+                <h2 class="admin__form__h2">Contratar</h2>
+                <form action="" id="admin__form">
+                    <label for="">uuid do funcionário</label>
+                    <select name="" id="admin__uudi__Funcionario_contratar"></select>
+                    <button id="uuid__funcionario__contratamento">buscar uuid funcionario</button>
+                    <input type="text" id="admin__uuidFuncionario">
+                    <label for="">uuid do departamentos para onde vai o funcionário</label>
+                    <select name="" id="admin__deparatemnto__uuid__funcionarios"></select>
+                    <button id="buscar_uuid_departamento_contratar">buscar uuid departamento</button>
+                    <input type="text" id="admin__uuidDapartamento">
+                    <button id="admin__contratar">contratar</button>
+                </form>
+            </article>
+
+            <article id="admin_section__demitirFuncionario">
+                <h2 class="admin__form__h2">Demitir Funcionário</h2>
+                <form action="" id="admin__form">
+                    <label for="">uuid do funcionários</label>
+                    <select name="" id="funcioanrios__uuid__demitir"></select>
+                    <button id="buscar_uuid_Funcionário_demitir">buscar uuid Funcionário</button>
+                    <input type="text" id="demitir" name="" id="">
+                    <button id="admin__demitirFuncionario">demitir</button>
+                </form>
+            </article>
+
+            <article id="admin_section__editarDepartamento">
+                <h2 class="admin__form__h2">Editar Departamento</h2>
+                <form action="" id="admin__form">
+
+                    <label for="">Descrição</label>
+                    <input type="text" id="admin__departamento">
+                    <label for="">uuid Departamento</label>
+                    <select name="" id="uuid_deparatemnto_editarDescricao"></select>
+                    <button id="admin__editarDep_descricao">buscar uuid departamento</button>
+                    <input type="text" id="admin__uuid">
+                    <button id="admin__ediarDep">editar</button>
+                </form>
+            </article>
+
+            <article id="admin_section__deletar">
+                <h2 class="admin__form__h2">Deletar Departamento</h2>
+                <form action="" id="admin__form">
+
+                    <label for="">uuid do departamento</label>
+                    <select name="" id="admin__deletar__departamento"></select>
+                    <button id="btn__deletar__deparatemnto">buscar uuid departamento</button>
+                    <input type="text" id="admin__deletarDepartamento">
+                    <button id="admin__deletarDep">deletar</button>
+
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <script type="module" src="/src/scripts/models/departamento.js"></script>
+    <script type="module" src="/src/scripts/models/mode.js"></script>
+
+</body>
+
+</html>

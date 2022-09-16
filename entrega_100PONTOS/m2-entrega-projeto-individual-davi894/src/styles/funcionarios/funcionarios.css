@@ -1,0 +1,34 @@
+#funcionario__btn__EditarDados {
+  color: var(--cor-with);
+  background-color: var(--cor-black);
+  border: none;
+  cursor: pointer;
+}
+
+.funcionario__section {
+  top: 61%;
+  left: 1%;
+  width: 10rem;
+  position: absolute;
+}
+
+.funcionario__sairModal {
+  position: absolute;
+  left: 102%;
+  top: 1%;
+  cursor: pointer;
+}
+
+@media (max-width: 537px) {
+  #admin__NomeImgEmail {
+    flex-direction: column;
+  }
+  #head__admin {
+    flex-direction: column;
+  }
+
+  #funcionario__btn__EditarDados {
+    max-width: 200px;
+    padding: 0.5rem;
+  }
+}

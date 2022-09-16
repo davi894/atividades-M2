@@ -1,0 +1,10 @@
+:root{
+  --cor-black:#000000;
+  --cor-with:#ffffffff
+}
+
+
+.dark__mode {
+  background-color: var(--cor-black);
+  color:var(--cor-with)
+}

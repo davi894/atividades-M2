@@ -1,0 +1,57 @@
+/* * {
+  outline: 1px solid red;
+} */
+:root {
+  --white--cor: #ffff;
+  --black--cor: #000000;
+}
+
+main {
+  max-width: 100vw;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h1 {
+  color: var(--white--cor);
+  font-size: 2rem;
+  font-weight: 900;
+}
+/* header */
+#heade__login {
+  background-color: var(--black--cor);
+  height: 2rem;
+  max-width: 100vw;
+  padding: 0.8rem;
+}
+
+/* fomr */
+
+#login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+#login__Label__email,
+#login__Label__password {
+  min-width: 80%;
+}
+
+/* input */
+
+input {
+  max-width: 13rem;
+  padding: 0.5rem;
+  min-width: 16rem;
+}
+
+/* button */
+#login__btn__logar {
+  min-width: 80px;
+  padding: 0.5rem;
+}

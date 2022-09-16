@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/admin/admin.css">
+    <link rel="stylesheet" href="/src/styles/mode.css">
+
+    <title>Página do Admin</title>
+</head>
+
+<body>
+    <header id="head__admin">
+        <h1 id="head__admin__h1">Multi-Empresas</h1>
+        <div id="admin__NomeImgEmail">
+            <img id="admin__img" src="/src/assets/svg/person-circle-outline.svg" alt="">
+            <div id="admin__dados">
+                <span id="admin__nome">nome</span>
+                <span id="admin__email">nome@gmail.com</span>
+            </div>
+        </div>
+        <button class="mode">mode</button>
+    </header>
+
+    <main>
+        <ul id="admin__ul">
+            <li class="admin__li"> <a class="admin__a" href="/src/pages/admin/pages/empresas.html">empresas</a> </li>
+            <li class="admin__li"> <a class="admin__a" href="/src/pages/admin/pages/setores.html">setores</a></li>
+            <li class="admin__li"> <a class="admin__a" href="/src/pages/admin/pages/departamento.html">departamentos</a> </li>
+            <li class="admin__li"><a class="admin__a" href="/src/pages/admin/admin.html">Página Principal</a></li>
+        </ul>
+
+        <section id="admin__section">
+
+            <h2 class="admin__h2">listar todos os usuários </h2>
+            <ul id="admin__listarUsuarios">
+
+            </ul>
+
+            <h2 class="admin__h2">Usuários sem departamentos</h2>
+            <ul id="admin__semDepartamentos">
+
+            </ul>
+
+            <h2 class="admin__h2">Atualizar informações do funcionário</h2>
+            <form action="" id="admin__form">
+
+                <select name="" id="admin__select">
+
+                </select>
+                <button id="admin__btn__buscarFunSelect">buscar funcionário</button>
+
+                <label for="">kind of work</label>
+                <input type="text" id="admin__kindofwork">
+                <label for="">Nível Profissional</label>
+                <input type="text" id="admin__nivelProfissional">
+                <button id="admin__btn__editarUser">editar</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="/src/scripts/models/homePage.js"></script>
+    <script type="module" src="/src/scripts/models/mode.js"></script>
+</body>
+
+</html>
